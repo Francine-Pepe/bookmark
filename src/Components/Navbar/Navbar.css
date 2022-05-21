@@ -1,0 +1,267 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5em 7em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.navbar {
+  width: 35em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar button,
+.navbar a {
+  color: hsl(229, 31%, 21%);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.navbar button {
+  width: 8em;
+  height: auto;
+  padding: 0.8em;
+  border: 2px solid hsl(0, 94%, 66%);
+  border-radius: 4px;
+  background-color: hsl(0, 94%, 66%);
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.navbar button:hover {
+  background-color: transparent;
+  color: hsl(0, 94%, 66%);
+  cursor: pointer;
+}
+
+.navbar_container img {
+  left: 0;
+}
+
+hr {
+  width: 83%;
+  margin-top: 2em;
+  background-color: hsl(229, 8%, 60%);
+}
+
+/* NavbarMobile CSS */
+
+/* 
+body {
+    background: #336193;
+    color: #6ecddd;
+    font-family: 'Bebas';
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  } */
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 0.15em;
+  font-size: 3em;
+  line-height: 1.2;
+  transform: translateY(52%);
+}
+
+#toggle {
+  display: none;
+}
+
+/**
+    Hamburger
+  **/
+.hamburger {
+  position: absolute;
+  top: 7em;
+  right: 10%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  background-color: rgb(37, 43, 70);
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+  Nav Styles
+  **/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 43, 70, 0.5);
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  background-color: rgba(37, 43, 70, 0.8);
+}
+
+.nav-wrapper svg {
+  margin-top: 5.5em;
+  display: flex;
+  margin-left: 5em;
+}
+
+.nav-wrapper button {
+  width: 82vw;
+  height: 2em;
+  padding: 1em;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+nav {
+  text-align: center;
+
+  /* margin-left: 25%; */
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+nav a:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+/* nav a:hover {
+    color: white;
+  } */
+/* nav a:hover:before {
+    height: 100%;
+  } */
+
+/**
+  Animations
+  **/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+  background-color: #fff;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+  background-color: #fff;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1114px) {
+  .navbar_container {
+    padding: 3.5em 5em;
+  }
+
+  .navbar {
+    width: 30em;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .nav_mobile {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+@media all and (min-width: 375px) and (max-width: 900px) {
+  .navbar_container {
+    margin-left: -0.4em;
+  }
+
+  .nav-wrapper svg {
+        margin-left: 4.6em;
+        
+  }
+}
+
+@media all and (max-width: 375px) {
+  .navbar_container {
+    margin-left: -3.5em;
+  }
+
+  .nav-wrapper svg {
+        margin-left: 1.5em;
+        
+  }
+}
+
+/* @media all and (max-width: 540px) {
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 2em;
+        
+      }
+      
+} */
