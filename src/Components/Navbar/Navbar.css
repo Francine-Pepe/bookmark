@@ -1,3 +1,8 @@
+body hr {
+  margin: 1.5em auto;
+  
+}
+
 .navbar_container {
   display: flex;
   justify-content: space-between;
@@ -62,17 +67,7 @@ hr {
 
 /* NavbarMobile CSS */
 
-/* 
-body {
-    background: #336193;
-    color: #6ecddd;
-    font-family: 'Bebas';
-    text-align: center;
-    max-width: 100%;
-    overflow-x: hidden;
-    padding: 0;
-    margin: 0;
-  } */
+
 h1 {
   text-align: center;
   letter-spacing: 1px;
@@ -94,7 +89,7 @@ h1 {
   top: 7em;
   right: 10%;
   margin-left: -2em;
-  margin-top: -45px;
+  margin-top: -65px;
   width: 2em;
   height: 45px;
   z-index: 5;
@@ -134,7 +129,7 @@ h1 {
 }
 
 .nav-wrapper svg {
-  margin-top: 5.5em;
+  margin-top: 4em;
   display: flex;
   margin-left: 5em;
 }
@@ -168,7 +163,7 @@ nav a {
   color: #fff;
   font-size: 1.5em;
   display: inline-block;
-  margin-top: 1.25em;
+  /* margin-top: 1.25em; */
   transition: color 0.2s ease-in-out;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -234,27 +229,61 @@ nav a:before {
   }
 }
 
-@media all and (min-width: 375px) and (max-width: 900px) {
+@media all and (max-width: 768px) {
   .navbar_container {
-    margin-left: -0.4em;
+    margin-left: -1em;
   }
 
   .nav-wrapper svg {
-        margin-left: 4.6em;
+        margin-left: 4em;
+        
+  }
+}
+
+@media all and (min-width: 485px) and (max-width: 576px) {
+  .navbar_container {
+    margin-left: -1.5em;
+  }
+
+  .nav-wrapper svg {
+        margin-left: 3.5em;
+        
+  }
+}
+
+/* @media all and (max-width: 484px) {
+  .navbar_container {
+    margin-left: -1.5em;
+  }
+
+  .nav-wrapper svg {
+        margin-left: 3.5em;
+        
+  }
+} */
+
+@media all and (min-width: 375px) and (max-width: 484px){
+  .navbar_container {
+    margin-left: -3.1em;
+  }
+
+  .nav-wrapper svg {
+        margin-left: 1.9em;
         
   }
 }
 
 @media all and (max-width: 375px) {
   .navbar_container {
-    margin-left: -3.5em;
+    margin-left: -3.1em;
   }
 
   .nav-wrapper svg {
-        margin-left: 1.5em;
+        margin-left: 1.9em;
         
   }
 }
+
 
 /* @media all and (max-width: 540px) {
     .navbar_container {
