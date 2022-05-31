@@ -4,13 +4,11 @@ import {
   VStack,
   Flex,
   Box,
-  Heading,
-  Text,
-  Button,
+  
 } from "@chakra-ui/react";
-import ImageTop from "./../images/illustration-hero.svg";
+import ImageBottom from "./../images/illustration-features-tab-1.svg";
 
-export default function ImageContent() {
+export default function ImageContentBottom() {
   return (
     <>
       <VStack>
@@ -23,9 +21,9 @@ export default function ImageContent() {
               maxW="100vw"
               height="30em"
             >
-              <div className="background_parent">
-                <div className="background_image">
-                  <img src={ImageTop} alt="" />
+              <div className="background_parent_bottom">
+                <div className="background_image_bottom">
+                  <img src={ImageBottom} alt="" />
                 </div>
               </div>
             </Box>
