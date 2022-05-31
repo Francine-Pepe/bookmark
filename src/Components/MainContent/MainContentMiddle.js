@@ -72,7 +72,7 @@ export default function MainContentMiddle() {
 
         <Tabs className="tabs_mobile" sx={tabDesktop}>
           <TabList></TabList>
-          <TabList className="tab_list" sx={tabList} w="25em">
+          <TabList className="tab_list" sx={tabList} w="85vw">
             <Tab sx={styleTabs}>Simple Bookmarking</Tab>
           </TabList>
           <TabList className="tab_list" sx={tabList}>
