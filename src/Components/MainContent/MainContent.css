@@ -90,6 +90,31 @@
   width: 100%;
 }
 
+/* MainContentMiddle CSS */
+
+.middle_container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2em;
+}
+
+.middle_container h1 {
+  font-size: 2em;
+  font-family: Rubik;
+  font-weight: 500;
+}
+
+.tab_button {
+  border-bottom: 1px solid red;
+  padding: 2em;
+  display: flex;
+  gap: 10px;
+}
+
+
 /* Media Queries */
 
 @media screen and (max-width: 950px) {
@@ -109,8 +134,9 @@
   .background_parent {
     width: 100vw;
     height: 40em;
-    margin-top: -100px;
+    /* margin-top: -100px; */
   }
+  
 }
 
 @media screen and (max-width: 576px) {
@@ -133,6 +159,7 @@
     height: 3.5em;
     font-size: 15px;
   }
+
 }
 
 @media screen and (max-width: 440px) {
