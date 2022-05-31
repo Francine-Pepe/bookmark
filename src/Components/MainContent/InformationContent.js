@@ -1,7 +1,7 @@
 import "./MainContent.css";
 import { Container, VStack, Flex, Box, Heading, Text } from "@chakra-ui/react";
 
-export default function InformationContent() {
+export default function InformationContent(props) {
   const contentTopLeft = {
     title: "A Simple Bookmark Manager",
     text: "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.",
