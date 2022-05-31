@@ -1,4 +1,5 @@
 import './App.css';
+import Cards from './Components/Cards/Cards';
 import ExtensionsText from './Components/Extensions/ExtensionsText';
 import MainContentBottom from './Components/MainContent/MainContentBottom';
 import MainContentMiddle from './Components/MainContent/MainContentMiddle';
@@ -13,6 +14,8 @@ function App() {
       <MainContentMiddle />
       <MainContentBottom />
       <ExtensionsText />
+      <Cards />
+      
     </div>
   );
 }

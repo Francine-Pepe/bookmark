@@ -1,0 +1,12 @@
+.button_container {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    .button_container {
+        display: none;
+    }
+}
