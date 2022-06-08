@@ -1,16 +1,9 @@
 import "./MainContent.css";
-import {
-  Container,
-  VStack,
-  Flex,
-  
-} from "@chakra-ui/react";
-import InformationContent from './InformationContent';
-import ImageContent from './ImageContent';
+import { Container, VStack, Flex } from "@chakra-ui/react";
+import InformationContent from "./InformationContent";
+import ImageContent from "./ImageContent";
 
 export default function MainContentTop() {
-  
-
   return (
     <>
       <VStack>

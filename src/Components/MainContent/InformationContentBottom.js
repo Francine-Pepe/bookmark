@@ -1,21 +1,16 @@
 import "./MainContent.css";
 import { Container, VStack, Flex, Box, Heading, Text } from "@chakra-ui/react";
-import Buttons from "../Buttons/Buttons";
+import MoreInfoButton from "../Buttons/MoreInfoButton";
 
 export default function InformationContentBottom() {
   const contentTopLeft = {
     title: "Bookmark in one click",
     text: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
-    button: "More Info",
   };
 
   const styleHeading = {
     fontFamily: "Rubik",
     fontWeight: "500",
-  };
-
-  const buttonStyle = {
-    width: "10em",
   };
 
   return (
@@ -57,8 +52,8 @@ export default function InformationContentBottom() {
               >
                 {contentTopLeft.text}
               </Text>
-              <div className="button_container">
-                <Buttons title={contentTopLeft.button} style={buttonStyle} />
+              <div className="button_inf_cont_bottom">
+              <MoreInfoButton />
               </div>
             </Box>
           </Flex>

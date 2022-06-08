@@ -14,6 +14,10 @@
   gap: 20px;
 }
 
+.top_buttons_container {
+  margin-top: 3em;
+}
+
 .button_content button {
   width: 15em;
   height: 4em;
@@ -179,6 +183,13 @@
     max-width: 60vw;
     height: fit-content;
   }
+
+  .button_chrome button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -208,6 +219,10 @@
     width: 20em;
     height: 3.5em;
     font-size: 15px;
+  }
+
+  .button_inf_cont_bottom {
+    display: none;
   }
 }
 

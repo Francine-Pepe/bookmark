@@ -1,6 +1,5 @@
 import "./Navbar.css";
-import Facebook from "./../images/icon-facebook.svg";
-import Twitter from "./../images/icon-twitter.svg";
+import SocialMedia from "../Footer/SocialMedia";
 
 export default function NavbarMobile() {
   return (
@@ -33,22 +32,21 @@ export default function NavbarMobile() {
           </svg>
           <nav>
             <hr />
-            <a href="/">Features</a>
+            <a href="#features">Features</a>
             <hr />
-            <a href="/">Pricing</a>
+            <a href="#pricing">Pricing</a>
             <hr />
-            <a href="/">Contact</a>
+            <a href="#contact">Contact</a>
             <hr />
             <a href="/" className="toggler_link">
               <button>Login</button>
+              <div className="toggler_social_media">
+                <div>
+                  <SocialMedia />
+                </div>
+              </div>
             </a>
           </nav>
-        </div>
-      </div>
-      <div className="toggler_social_media">
-        <div>
-          <img src={Facebook} alt="facebook" />
-          <img src={Twitter} alt="twitter" />
         </div>
       </div>
     </>

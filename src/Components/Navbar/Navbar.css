@@ -177,12 +177,7 @@ nav a:before {
   left: -0.5em;
   transition: all 0.2s ease-in-out;
 }
-/* nav a:hover {
-    color: white;
-  } */
-/* nav a:hover:before {
-    height: 100%;
-  } */
+
 
 /**
   Animations
@@ -205,6 +200,13 @@ nav a:before {
 #toggle:checked + .hamburger + .nav {
   top: 0;
   transform: scale(1);
+}
+
+.toggler_social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
 }
 
 /* Media Queries */

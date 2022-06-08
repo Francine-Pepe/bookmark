@@ -11,9 +11,9 @@ export default function Navbar() {
           <img src={Bookmark} alt="logo" />
         </a>
         <div className="navbar">
-          <a href="/">Features</a>
-          <a href="/">Pricing</a>
-          <a href="/">Contact</a>
+          <a href="#features">Features</a>
+          <a href="pricing">Pricing</a>
+          <a href="#contact">Contact</a>
           <a href="/">
             <button>Login</button>
           </a>

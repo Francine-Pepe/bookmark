@@ -22,6 +22,8 @@
     margin-top: 6em
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 701px)  {
     .firefox_container,
     .opera_container {
