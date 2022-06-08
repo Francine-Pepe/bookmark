@@ -8,14 +8,6 @@ export default function ExtensionsText(props) {
     text: "We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.",
   };
 
-//   const buttonProps = {
-//     title: "Add & Install Extension",
-//   };
-
-//   const buttonStyle = {
-//     width: "15em",
-//   };
-
   const styleHeading = {
     fontFamily: "Rubik",
     fontWeight: "500",
@@ -28,9 +20,6 @@ export default function ExtensionsText(props) {
         <Text color="hsl(229, 8%, 60%)" fontFamily="Rubik">
           {extensions.text}
         </Text>
-        {/* <div className="button_container">
-          <Buttons title={buttonProps.title} style={buttonStyle} />
-        </div> */}
       </Container>
     </>
   );

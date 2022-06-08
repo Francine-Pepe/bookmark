@@ -1,5 +1,16 @@
-import { Container, Heading, Text, Tabs, TabList, Tab } from "@chakra-ui/react";
+import {
+  Container,
+  Heading,
+  Text,
+  Tabs,
+  TabList,
+  Tab,
+  TabPanel,
+  TabPanels,
+  Flex,
+} from "@chakra-ui/react";
 import "./MainContent.css";
+import MainContentBottom from "./MainContentBottom";
 
 export default function MainContentMiddle() {
   const styleTabs = {
@@ -30,13 +41,13 @@ export default function MainContentMiddle() {
     },
   };
 
-  const tabListRow = {
-    "@media screen and (max-width: 500px)": {
-      flexDirection: "column",
-      alignItems: "center",
-      paddingTop: "1em",
-    },
-  };
+  // const tabListRow = {
+  //   "@media screen and (max-width: 500px)": {
+  //     flexDirection: "column",
+  //     alignItems: "center",
+  //     paddingTop: "1em",
+  //   },
+  // };
 
   const tabMobile = {
     "@media screen and (max-width: 500px)": {
@@ -52,20 +63,36 @@ export default function MainContentMiddle() {
 
   return (
     <>
-      <Container className="middle_container" centerContent="true">
+      <Container
+        className="middle_container"
+        centerContent="true"
+        id="features"
+      >
         <Heading>Features</Heading>
-        <Text >
+        <Text>
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </Text>
 
-        <Tabs sx={tabMobile} mt={3} >
-          <TabList className="tab_list" sx={tabList} >
+        <Tabs sx={tabMobile} mt={3}>
+          <TabList className="tab_list" sx={tabList}>
             <Tab sx={styleTabs}>Simple Bookmarking</Tab>
             <Tab sx={styleTabs}>Speedy Searching</Tab>
             <Tab sx={styleTabs}>Easy Sharing</Tab>
           </TabList>
+
+          <TabPanels>
+            <TabPanel>
+              <MainContentBottom />
+            </TabPanel>
+            <TabPanel>
+              <p>two!</p>
+            </TabPanel>
+            <TabPanel>
+              <p>three!</p>
+            </TabPanel>
+          </TabPanels>
         </Tabs>
 
         {/* Display this content when reach max-width 500px - Mobile */}

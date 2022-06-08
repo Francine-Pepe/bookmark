@@ -1,7 +1,7 @@
 import "./MainContent.css";
 import { Container, VStack, Flex, Box, Heading, Text } from "@chakra-ui/react";
 
-export default function InformationContent(props) {
+export default function InformationContent() {
   const contentTopLeft = {
     title: "A Simple Bookmark Manager",
     text: "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.",
@@ -42,13 +42,15 @@ export default function InformationContent(props) {
               >
                 {contentTopLeft.text}
               </Text>
-              <div className="button_content">
-                <button className="button_chrome">
-                  {contentTopLeft.buttonChrome}
-                </button>
-                <button className="button_firefox">
-                  {contentTopLeft.buttonFirefox}
-                </button>
+              <div className="top_buttons_container">
+                <div className="button_content">
+                  <button className="button_chrome">
+                    {contentTopLeft.buttonChrome}
+                  </button>
+                  <button className="button_firefox">
+                    {contentTopLeft.buttonFirefox}
+                  </button>
+                </div>
               </div>
             </Box>
           </Flex>

@@ -5,8 +5,16 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
+    .button_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* @media screen and (max-width: 500px) {
     .button_container {
         display: none;
     }
-}
+} */
