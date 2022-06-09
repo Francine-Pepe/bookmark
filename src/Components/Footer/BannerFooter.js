@@ -1,4 +1,4 @@
-import { Container, VStack, Heading, Flex } from "@chakra-ui/react";
+import { Container, VStack, Heading} from "@chakra-ui/react";
 import FooterForm from "./FooterForm";
 
 export default function BannerFooter(props) {
