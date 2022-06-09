@@ -23,8 +23,8 @@ export default function SocialMedia() {
           }}
         >
           {socialIcons.map((socialIcons, index) => (
-            <Box w="5vw" className="social_media_container" >
-              <a href="/"><img src={socialIcons.icon} alt="social media icon" /></a>
+            <Box w="5vw" className="social_media_container" key={index}>
+              <a href="/" ><img src={socialIcons.icon} alt="social media icon"  /></a>
               <Spacer />
             </Box>
           ))}

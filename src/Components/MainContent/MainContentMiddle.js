@@ -133,7 +133,7 @@ export default function MainContentMiddle() {
         <Tabs mt={3} align="center" isFitted="true" sx={tabDesktop}>
           <TabList sx={tabList}></TabList>
           {tabListData.map((tabListData, index) => (
-            <TabList w="70vw">
+            <TabList w="70vw" key={index}>
               <Tab sx={styleTabs}>{tabListData.title}</Tab>
             </TabList>
           ))}

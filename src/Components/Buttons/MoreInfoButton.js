@@ -3,7 +3,7 @@ import Buttons from "./Buttons";
 export default function MoreInfoButton(props) {
   const buttonStyle = {
     width: "10em",
-    "@media screen and (max-width: 761px)": {
+    "@media screen and (maxWidth: 761px)": {
       display: "none",
     },
   };

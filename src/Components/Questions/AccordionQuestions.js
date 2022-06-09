@@ -62,7 +62,7 @@ export default function AccordionQuestions() {
           }}
         >
           {accordionData.map((accordionData, index) => (
-            <Accordion allowToggle>
+            <Accordion allowToggle key={index}>
               <AccordionItem>
                 {({ isExpanded }) => (
                   <>
