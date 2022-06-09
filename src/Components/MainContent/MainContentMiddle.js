@@ -10,7 +10,12 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import "./MainContent.css";
-import MainContentBottom from "./MainContentBottom";
+import TabPanelsSearching from "./TabPanelsSearching";
+import EasySharing from "./EasySharing";
+import BookmarkImage from "./BookmarkImage";
+import SpeedySearchingImage from "./SpeedySearchingImage";
+import EasySharingImage from "./EasySharingImage";
+import Bookmark from "./Bookmark";
 
 export default function MainContentMiddle() {
   const styleTabs = {
@@ -33,33 +38,56 @@ export default function MainContentMiddle() {
     },
   };
 
-  const tabList = {
-    "@media screen and (max-width: 500px)": {
-      flexDirection: "column",
-      alignItems: "center",
-      paddingTop: "1em",
-    },
-  };
-
-  // const tabListRow = {
-  //   "@media screen and (max-width: 500px)": {
-  //     flexDirection: "column",
-  //     alignItems: "center",
-  //     paddingTop: "1em",
-  //   },
-  // };
-
   const tabMobile = {
-    "@media screen and (max-width: 500px)": {
+    "@media screen and (max-width: 761px)": {
       display: "none",
     },
   };
 
   const tabDesktop = {
-    "@media screen and (min-width: 501px)": {
+    "@media screen and (min-width: 762px)": {
       display: "none",
     },
   };
+
+  const tabPanelStyle = {
+    display: "flex",
+    width: "100vw",
+    overflow: "hidden",
+    "@media screen and (max-width: 949px)": {
+      display: "flex",
+      flexWrap: "wrap",
+    },
+  };
+
+  const tabList = {
+    width: "70vw",
+
+    "@media screen and (max-width: 761px)": {
+      flexDirection: "column",
+      alignItems: "center",
+      paddingTop: "1em",
+      justifyContent: "center",
+      overflow: "hidden",
+    },
+    "@media screen and (min-width: 762px)": {
+      display: "none",
+    },
+  };
+
+  
+
+  const tabListData = [
+    {
+      title: "Simple Bookmarking",
+    },
+    {
+      title: "Speedy Searching",
+    },
+    {
+      title: "Easy Sharing",
+    },
+  ];
 
   return (
     <>
@@ -67,6 +95,9 @@ export default function MainContentMiddle() {
         className="middle_container"
         centerContent="true"
         id="features"
+        // sx={{
+        //   overflow: "hidden",
+        // }}
       >
         <Heading>Features</Heading>
         <Text>
@@ -74,40 +105,58 @@ export default function MainContentMiddle() {
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </Text>
-
-        <Tabs sx={tabMobile} mt={3}>
-          <TabList className="tab_list" sx={tabList}>
-            <Tab sx={styleTabs}>Simple Bookmarking</Tab>
-            <Tab sx={styleTabs}>Speedy Searching</Tab>
-            <Tab sx={styleTabs}>Easy Sharing</Tab>
-          </TabList>
+        <Tabs mt={3} align="center" isFitted="true" sx={tabMobile}>
+            <TabList w="70vw"  >
+              <Tab sx={styleTabs}>Simple Bookmarking</Tab>
+              <Tab sx={styleTabs}>Speedy Searching</Tab>
+              <Tab sx={styleTabs}>Easy Sharing</Tab>
+            </TabList>
 
           <TabPanels>
-            <TabPanel>
-              <MainContentBottom />
+            <TabPanel sx={tabPanelStyle} p={0}>
+              <BookmarkImage />
+              <Bookmark />
             </TabPanel>
-            <TabPanel>
-              <p>two!</p>
+            <TabPanel sx={tabPanelStyle} p={0}>
+              <SpeedySearchingImage />
+              <TabPanelsSearching />
             </TabPanel>
-            <TabPanel>
-              <p>three!</p>
+            <TabPanel sx={tabPanelStyle} p={0}>
+              <EasySharingImage />
+              <EasySharing />
             </TabPanel>
           </TabPanels>
         </Tabs>
 
-        {/* Display this content when reach max-width 500px - Mobile */}
+        {/* Display this content when reach max-width 761px - Mobile */}
 
-        <Tabs className="tabs_mobile" sx={tabDesktop}>
-          <TabList></TabList>
-          <TabList className="tab_list" sx={tabList} w="85vw">
-            <Tab sx={styleTabs}>Simple Bookmarking</Tab>
-          </TabList>
-          <TabList className="tab_list" sx={tabList}>
-            <Tab sx={styleTabs}>Speedy Searching</Tab>
-          </TabList>
-          <TabList className="tab_list" sx={tabList}>
-            <Tab sx={styleTabs}>Easy Sharing</Tab>
-          </TabList>
+        <Tabs mt={3} align="center" isFitted="true" sx={tabDesktop}>
+          <TabList sx={tabList}></TabList>
+          {tabListData.map((tabListData, index) => (
+            <TabList w="70vw">
+              <Tab sx={styleTabs}>{tabListData.title}</Tab>
+            </TabList>
+          ))}
+          <TabPanels>
+            <TabPanel sx={tabPanelStyle} p={0}>
+              <Flex direction="column">
+                <BookmarkImage />
+                <Bookmark />
+              </Flex>
+            </TabPanel>
+            <TabPanel sx={tabPanelStyle} p={0}>
+              <Flex direction="column">
+                <SpeedySearchingImage />
+                <TabPanelsSearching />
+              </Flex>
+            </TabPanel>
+            <TabPanel sx={tabPanelStyle} p={0}>
+              <Flex direction="column">
+                <EasySharingImage />
+                <EasySharing />
+              </Flex>
+            </TabPanel>
+          </TabPanels>
         </Tabs>
       </Container>
     </>

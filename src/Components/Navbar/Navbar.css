@@ -129,9 +129,10 @@ h1 {
 }
 
 .nav-wrapper svg {
-  margin-top: 4em;
+  margin-top: 3.5em;
   display: flex;
   margin-left: 5em;
+  left: 0;
 }
 
 .nav-wrapper button {

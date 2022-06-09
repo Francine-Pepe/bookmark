@@ -20,10 +20,9 @@ export default function InformationContent() {
         <Container maxW="100vw" bg="#fff" color="#262626" ps="0" pe="0">
           <Flex maxW="100vw" className="flex_container">
             <Box
-              p="4em"
+              p="4em 6em"
               w="100%"
               height="30em"
-              border="solid 1px #262626"
               className="box_container"
               sx={{
                 "@media screen and (max-width: 500px)": {

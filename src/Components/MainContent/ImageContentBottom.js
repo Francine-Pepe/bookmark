@@ -6,16 +6,17 @@ import {
   Box,
   
 } from "@chakra-ui/react";
-import ImageBottom from "./../images/illustration-features-tab-1.svg";
 
-export default function ImageContentBottom() {
+export default function ImageContentBottom(props) {
+
+  const { image } = props;
+
   return (
     <>
       <VStack>
-        <Container maxW="100vw" bg="#fff" color="#262626" ps="0" pe="0">
+        <Container maxW="100vw" bg="#fff" color="#262626" ps="0" pe="0" m="0">
           <Flex maxW="100vw" className="flex_container">
             <Box
-              border="solid 1px #262626"
               // p="10em 0 2em 2em"
               p="0"
               maxW="100vw"
@@ -23,7 +24,7 @@ export default function ImageContentBottom() {
             >
               <div className="background_parent_bottom">
                 <div className="background_image_bottom">
-                  <img src={ImageBottom} alt="" />
+                  <img src={image} alt="" />
                 </div>
               </div>
             </Box>
