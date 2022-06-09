@@ -1,5 +1,4 @@
 import { Container, VStack } from "@chakra-ui/react";
-import Buttons from "../Buttons/Buttons";
 import MoreInfoButton from "../Buttons/MoreInfoButton";
 import Informations from "./../Informations/Informations";
 

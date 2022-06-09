@@ -1,4 +1,4 @@
-import { Container, VStack, Flex } from "@chakra-ui/react";
+import { Container, VStack } from "@chakra-ui/react";
 import MoreInfoButton from "../Buttons/MoreInfoButton";
 import Informations from "./../Informations/Informations";
 import "./MainContent.css";
