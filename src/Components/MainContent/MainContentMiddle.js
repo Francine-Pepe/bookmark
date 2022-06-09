@@ -26,15 +26,16 @@ export default function MainContentMiddle() {
       color: "hsl(229, 31%, 21%)",
     },
     _active: {
-      backgroundColor: "trasparent",
+      backgroundColor: "transparent",
     },
     _select: {
-      borderBottom: "hsl(0, 94%, 66%)",
+      borderBottom: "hsl(0, 94%, 66%) 2px solid",
     },
     _selected: {
       color: "hsl(229, 31%, 21%)",
       fontWeight: "500",
       borderColor: "hsl(0, 94%, 66%)",
+      width: "auto"
     },
   };
 

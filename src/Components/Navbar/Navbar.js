@@ -12,7 +12,7 @@ export default function Navbar() {
         </a>
         <div className="navbar">
           <a href="#features">Features</a>
-          <a href="pricing">Pricing</a>
+          <a href="#pricing">Pricing</a>
           <a href="#contact">Contact</a>
           <a href="/">
             <button>Login</button>
