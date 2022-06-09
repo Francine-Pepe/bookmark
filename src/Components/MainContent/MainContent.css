@@ -145,6 +145,20 @@
   height: fit-content;
 }
 
+/* Tab Searching  */
+
+.searching_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* Button more info */
+
+.button_more_info {
+  padding-left: 4em;
+  padding-top: 2em;
+}
 
 /* Media Queries */
 
@@ -184,12 +198,16 @@
     height: fit-content;
   }
 
-  .button_chrome button {
+  .button_chrome button,
+  .button_more_info {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+  .button_more_info {
+    padding: 0 4em;
+  }
 }
 
 @media screen and (max-width: 576px) {

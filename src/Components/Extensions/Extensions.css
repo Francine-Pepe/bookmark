@@ -1,6 +1,7 @@
 .button_container {
     display: flex;
     align-items: center;
+    
 }
 
 /* Media Queries */

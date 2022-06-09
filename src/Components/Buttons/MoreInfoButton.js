@@ -3,6 +3,9 @@ import Buttons from "./Buttons";
 export default function MoreInfoButton(props) {
   const buttonStyle = {
     width: "10em",
+    "@media screen and (max-width: 761px)": {
+      display: "none",
+    },
   };
 
   const buttonTitle = {
